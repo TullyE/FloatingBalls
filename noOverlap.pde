@@ -7,8 +7,6 @@ int total = 500;
 void setup()
 {
   size(1792, 828 );
-  //noLoop();
-  //frameRate(15);
   balls.add(new Ball((int) (Math.random() * width), (int) (Math.random() * height), maxSize, alpha, colors[(int) (Math.random() * 5)], false));
 }
 
@@ -60,15 +58,8 @@ Ball calcNew(int i)
   {
     if (myBall.overlapping(suggestedX, suggestedY, suggestedSize))
     {
-      //System.out.println("Overlap");
       return calcNew(i + 1);
     }
   }
   return new Ball(suggestedX, suggestedY, suggestedSize, alpha, colors[(int) (Math.random() * 5)], false);
-}
-
-void mousePressed()
-{
-  save("noOverlapDark.png");
-  exit();
 }
