@@ -1,5 +1,5 @@
 color[] colors = new color[]{color(224, 187, 228), color(149, 125, 173), color(210, 145, 188), color(254, 200, 216), color(255, 223, 211)};
-ArrayList<Ball> balls = new ArrayList<>();
+ArrayList <Ball> balls = new ArrayList<>();
 int alpha = 255;
 int maxSize = 100;
 boolean growing = true;
