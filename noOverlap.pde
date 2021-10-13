@@ -6,7 +6,7 @@ boolean growing = true;
 int total = 500;
 void setup()
 {
-  size(1792, 828 );
+  size(1792, 828);
   balls.add(new Ball((int) (Math.random() * width), (int) (Math.random() * height), maxSize, alpha, colors[(int) (Math.random() * 5)], false));
 }
 
@@ -14,8 +14,6 @@ void draw()
 {
   if (growing)
   {
-    System.out.println(balls.size() + " / " + total);
-
     if (balls.size() > total)
     {
       growing = false;
