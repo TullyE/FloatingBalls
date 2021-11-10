@@ -3,7 +3,7 @@ ArrayList <Ball> balls = new ArrayList <Ball> ();
 int alpha = 255;
 int maxSize = 100;
 boolean growing = true;
-int total = 500;
+int total = 50000;
 void setup()
 {
   size(1792, 828);
